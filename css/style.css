@@ -425,7 +425,7 @@ main {
 
 .form__input1{
 	animation-name:translat;
-	animation-duration:0.5s;
+	animation-duration:0.7s;
 	animation-iteration-count:infinite ;
 	animation-direction:alternate;	
 }
@@ -436,7 +436,7 @@ main {
 	}
 
 	100%{
-		transform: translateX(5%);
+		transform: translateX(4%);
 	}
 }
 
