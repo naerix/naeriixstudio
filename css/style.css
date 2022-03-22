@@ -6,18 +6,13 @@
 	font-family: oswald, sans-serif;
 }
 
-html 
-{
-	font-size: 62.5%;
-	size: 62.5%;
-}
 
 /* /////////////Grid-Layout(mobilefirst)/////////// */
 
 .contenedor--displaygrid{
 	display:grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto;
+	grid-template-rows: auto auto auto auto;
 	grid-template-areas: "botonera" "encabezado" "main" "pie";
 }
 
@@ -40,62 +35,37 @@ html
 
 /*--------------Diseño De Nav y banner--------------*/
 
-.header{
-margin-bottom:-0.3rem;
+#bgnav{
+	background: #000;
 }
 
-.nav {
-	background-color: #000;
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: -0.3rem;
+#navBotonera li a{
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 500;
 }
 
-.nav__logo--size {
-	width: 20rem;
-	height: 5rem;
-	margin: 1rem auto 0 auto;
+#navBotonera li a:hover{
+	color: rgb(255,69,69);
+	transition: 0.5s;
 }
 
-.nav__ul {
-	display: flex;
-}
-
-.nav__ul li {
-	list-style: none;
-	margin: 1rem 2.5rem;
-}
-
-.nav__ul li a {
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 1.8rem;
-	font-weight: 600;
-}
-
-.nav__ul li a:hover {
-	color: rgb(240,69,69);
-	transition: 0.7s;
+.nav_logo{
+	width:198px;
+	height: 48px;
+	padding-left: 20px;
 }
 
 .header__banner--width {
 	width: 100%;
 	height: auto;
 }
-/*--------------Imagen de Fondo--------------*/
-
-body {
-	background-image: url(../img/mosaiko.jpg);
-}
 
 /*--------------INDEX--------------*/
 
 main {
 	background: #E8E8E8;
-	padding-bottom: 2.5rem;
+	padding-bottom: 25px;
 }
 
 
@@ -111,14 +81,15 @@ main {
 .section__historia {
 	text-align: center;
 	font-weight:600;
-	font-size: 2.5rem;
-	color:#000;
+	font-size: 1.5em;
+	color:#000; 
 }
 
-.section-historia--flex{
+.section-historia--flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
 }
 
 .section__historia--paddingtexto {
@@ -130,11 +101,12 @@ main {
 .discos {
 	text-align: center;
 	font-weight:600;
-	font-size: 1.8rem; 
+	font-size: 1em; 
 }
 
 .discos__texto {
-	margin-bottom: 2.5rem;
+	margin-bottom: 1.2em;
+	font-weight: bold;
 }
 
 .discos__img--margin {
@@ -150,11 +122,11 @@ main {
 }
 
 .discos__img--size {
-	width: 27rem;
+	width: 480px;
 	height: auto;
-	border-radius: 0.8rem;
-	box-shadow: 0.5rem 0.8rem 1.2rem #000;
-	margin: 0.4rem 0.4rem; 
+	border-radius: 8px;
+	box-shadow: 5px 8px 12px #000;
+	margin: 4px 4px; 
 }
 
 
@@ -170,7 +142,7 @@ main {
 	width:90%;
 	height: auto;
 	margin:auto;
-	font-size: 2.5rem;
+	font-size: 1.2em;
 	font-weight: 600;
 }
 
@@ -180,7 +152,7 @@ main {
 
 .estudios__h1 {
 	text-align: center;
-	font-size: 3.5rem;
+	font-size: 2em;
 }
 
 .estudios__text {
@@ -193,12 +165,12 @@ main {
 }
 
 .estudios__textos {
-	margin-bottom: 2.5rem;
+	margin-bottom: 25px;
 }
 
 .estudioa__img {
-	margin-left: 2.4rem;
-	width:25rem;
+	margin-left: 24px;
+	width: 250px;
 	height: auto;
 	border-radius: 0.5rem;
 }
@@ -215,7 +187,11 @@ main {
 }
 
 .estudiob__texto {
-	padding-bottom: 2.5rem;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 1.8em;
 }
 
 .estudiob__img {
@@ -275,11 +251,16 @@ main {
 }
 
 /* --------------------PRODUCTORES--------------- */
+
+.bannerimg{
+	width:100%;
+	height:auto;
+}
  h1 {
- 	font-size:2.4rem ;
+ 	font-size:1.8em ;
  	text-align: center;
- 	padding-top:2.5rem;
- 	padding-bottom:3rem;
+ 	padding-top:25px;
+ 	padding-bottom:30px;
  }
 .productores {
 	font-size: 2rem;
@@ -423,22 +404,6 @@ main {
 	transition: 0.5s;
 }
 
-.form__input1{
-	animation-name:translat;
-	animation-duration:0.7s;
-	animation-iteration-count:infinite ;
-	animation-direction:alternate;	
-}
-
-@keyframes translat{
-	0%{
-		transform:translateX(0);
-	}
-
-	100%{
-		transform: translateX(4%);
-	}
-}
 
 .textarea{
 	min-width: 30rem;
@@ -471,42 +436,28 @@ iframe{
 
 /*--------------Diseño Footer---------------*/
 .footer {
-	background: linear-gradient(to bottom, #333, #000);
+	background: #222;
 	text-align: center;
 	width:100%;
-	padding: 3rem;
+	padding: 30px;
 }
 
 .footer img {
-	width: 5rem;
+	width: 50px;
 	height: auto;
-	padding-top: 1rem;
+	padding-top: 10px;
 }
 
-.footer img{
-	animation-name: transformacion;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-direction:alternate;
-}
-
-@keyframes transformacion{
-	0%{
-		transform: scaleY(1.1);
-	}
-	100%{
-		transform: scaleY(1.2);
-	}
-}
 
 .footer__img--padding {
-	margin-left: 2.5rem;
-	margin-right: 2.5rem;
+	margin-left: 25px;
+	margin-right: 25px;
 }
+
 
 .footer__texto--color {
 	color: #ffffff;
-	font-size:1.5;
+	font-size:1.1em;
 	font-weight: 500;
 }
 
@@ -516,123 +467,4 @@ iframe{
 }
 
 /*/////////////////////////////MediaQuery////////////////////////////////////////////////////////////*/
-
-@media only screen and (min-width: 768px) {
-	/* Nav */
-	.contenedor--displaygrid{
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-		grid-template-areas: "botonera botonera" "encabezado encabezado" "main main" "pie pie";
-	}
-
-	/* index */
-	.discos__img--size{
-		width: 33rem;
-		height:auto;
-	}
-	/* estudios */
-	.estudioa__img{
-		width: 31rem;
-		height:auto;
-	}
-	.estudiob__img{
-		width: 31rem;
-		height:auto;
-	}
-	/* Equipamento */
-	.equipamento-div__img{
-		width:50rem;
-		height: auto;
-	}
-
-	/* Productores */
-
-	.productores__card{
-		flex-direction: row;
-	}
-
-	.productores__card-2{
-		flex-direction: row;
-	}
-	.productores__card-3{
-		flex-direction: row;
-	}
-
-	.productores__card-img{
-		width: 35rem;
-		height: auto;
-	}
-	.productores__card-2-img{
-		width: 35rem;
-		height: auto;
-	}
-	.productores__card-3-img{
-		width: 35rem;
-		height: auto;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-
-	.contenedor--displaygrid{
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: auto;
-		grid-template-areas: "botonera botonera botonera" "encabezado encabezado encabezado" "main main main" "pie pie pie";
-	}
-
-	.nav{
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.nav__ul li {
-		margin-right: 5rem;
-	}
-
-	.nav__logo--size {
-    	margin: 1rem 7.2rem;
-    }
-		/*INDEX  */
-	.discos__img--size{
-		width: 50rem;
-		height:auto;
-	}
-
-		/* estudios */
-	.estudioa__img{
-		width: 51rem;
-		height:auto;
-	}
-	.estudiob__img{
-		width: 51rem;
-		height:auto;
-	}
-
-	/* equipamento */
-	.equipamento-div{
-		flex-direction: row;
-	}
-
-	/* Contactanos */
-
-	.contactanos__div{
-		width: 60%;
-		height:auto;
-	}
-
-	.mapa{
-		width: 60%;
-		height:auto;
-	}
-
-@media only screen and (min-width: 1621px) {
-	.estudioa__img{
-		width: 70rem;
-		height:auto;
-	}
-	.estudiob__img{
-		width: 70rem;
-		height: auto;
-	}
-}
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+ @media 

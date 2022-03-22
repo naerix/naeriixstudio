@@ -8,25 +8,44 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/bootstrap.css">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="contenedor--displaygrid">
-		<!------- Navbar------->
-		<nav class="nav botonera">
-			<a href="index.html">
-				<img src="../img/naerixlogo.png" alt="naerix logo" class="nav__logo--size">
-			</a>
-			<ul class="nav__ul">
-				<li><a href="../index.html">HOME </a></li>
-				<li><a href="estudios.html">ESTUDIOS</a></li>
-				<li><a href="equipamento.html">EQUIPAMENTO</a></li>
-				<li><a href="productores.html">PRODUCTORES</a></li>
-				<li><a href="contactanos.html">CONTACTANOS</a></li>
-			</ul>
-		</nav>
-    <header class="encabezado">
-      <img src="../img/banner2.jpg" alt="bannerpagia2" class="estudios__banner">
-    </header>
+<!------- Navbar------->
+<nav class="navbar navbar-expand-lg navbar-dark botonera" id="bgnav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">
+       <img src="../img/naerixlogo.png" class="nav_logo" alt="naeriix logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navBotonera">
+            <li class="nav-item">
+             <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="estudios.html">ESTUDIOS</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="equipamento.html">EQUIPAMENTO</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="productores.html">PRODUCTORES</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+            </li>                
+          </ul>
+      </div>
+  </div>
+</nav>
+<header>
+  <img src="../img/banner2.jpg" class="bannerimg" alt="">
+</header>
+<!-- terminanavbar -->
 		<!-------------- Contenido ------------->
   <main class="main">
 
@@ -45,22 +64,59 @@
         <p> El artista podra contar con una sala de estar perfectamente decorada por <b>Alicia Mullen</b> la cual incluye: sillones, tv, metegol, consolas de videojuegos, todo perfectamente pensado para una completa distension y relax de los musicos.</p>
 
         <p class="estudios__textos">este estudio cuenta con una consola ASLL-K 440 TI del año 1980, tambien cuenta con un monitoreo GCI perfectamente diseñado para nuestra sala de grabacion con un Compresor ach de Line 6, todo nuestro equipamento esta pensado para una masterizacion y una calidad de sonido optima para los musicos </p>
-        <div class="estudios__img">
-  			 <img src="../img/estudioa1.jpg" alt="estudio a" class="estudioa__img">
-  			 <img src="../img/estudioa.jpg" alt="Estudio a imagen 2" class="estudioa__img">
-        </div>
-  		</div>
-        
-        <h2>Estudio B</h2>
+        <article>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/studioa1.jpg" class="d-block w-100 estudioa__img" alt="foto de estudio a">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/studioa.jpg" class="d-block w-100 estudioa__img" alt="foto de estudio b">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">siguiente</span>
+            </button>
+          </div>
+        </article>
+        <article></article>
+        <h2 class="estudiob__texto">Estudio B</h2>
 
-  		<div class="estudiob">
+  		  <div class="estudiob">
 
-  			<p class="estudiob__texto">El estudio de grabacion B cuenta con una sala de grabacion con baterias, bajos,guitarras, amplificadores y monitores Bust Laney y un sistema de microfonos Shure, la room de control cuenta con una <b>CONSOLA API de 32 canales de grabación x 64 canales de mezcla</b> la cual esta seteada por nuestro nuestro tecnico de sonido <b>Aurelio Narvaez. </b>
+  			 <p>El estudio de grabacion B cuenta con una sala de grabacion con baterias, bajos,guitarras, amplificadores y monitores Bust Laney y un sistema de microfonos Shure, la room de control cuenta con una <b>CONSOLA API de 32 canales de grabación x 64 canales de mezcla</b> la cual esta seteada por nuestro nuestro tecnico de sonido <b>Aurelio Narvaez. </b>
   			 contamos con un <b>COMPRESOR UREI 1176</b> este estudio esta perfectamente diseñado y enfocado para una produccion mucho mas profecional para aquellos artistas que quieran llevar su sonido un poco mas alla...  </p>
-  			<div class="estudios__img">
-  		    <img src="../img/estudiobb.jpg" alt="estudio b" class="estudiob__img">
-  		    <img src="../img/estudiob.jpg" alt="estudio b imagen 2" class="estudiob__img">
         </div>
+  			<article>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/estudiob.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/estudiobb.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
   		</div>
   	</section>
   </main>
@@ -72,5 +128,6 @@
 
      <h4 class="footer__texto--color">Naeriix studio es un estudio ficticio creado por el alumno Alex Duarte, ninguno de los artistas ya mencionados han pasado por el.</h4>	
 	</footer>
+  <script src="../js/bootstrap.js"></script>
 </body>
 </html>
