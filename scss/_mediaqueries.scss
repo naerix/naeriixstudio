@@ -1,0 +1,41 @@
+@media (min-width: 359px){
+
+	    .nav_logo {
+        width: 198px;
+        height: 48px;
+        padding-left: 20px;
+    }
+
+	    .discos__img--size {
+	    width: 149px;
+	    height: auto;
+    }
+}
+
+@media (min-width: 493px){
+	    .discos__img--size {
+	    width: 200px;
+	    height: auto;
+    }
+}
+
+@media (min-width: 663px){
+        .discos__img--size {
+	    width: 260px;
+	    height: auto;
+    }
+}
+
+@media (min-width: 691px){
+	    .discos__img--size {
+	    width: 291px;
+	    height: auto;
+    }
+}
+
+@media (min-width: 1200px){
+	    .discos__img--size {
+	    width: 480px;
+	    height: auto;
+    }
+}

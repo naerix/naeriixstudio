@@ -1,0 +1,33 @@
+//reset
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+	font-family: oswald, sans-serif;
+}
+
+//Grid-Layout//
+.contenedor--displaygrid{
+	display:grid;
+	grid-template-columns: 100vw;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: "botonera" "encabezado" "main" "pie";
+}
+
+.botonera{
+	grid-area: botonera;
+}
+
+.encabezado{
+	grid-area: encabezado;
+}
+
+.main{
+	grid-area: main;
+}
+
+.pie{
+	grid-area: pie;
+}
+//////////////

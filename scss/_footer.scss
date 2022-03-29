@@ -1,0 +1,31 @@
+//footer
+.footer {
+	background: $bgCfooter;
+	text-align: center;
+	width:100%;
+	padding: 30px;
+}
+
+.footer img {
+	width: 50px;
+	height: auto;
+	padding-top: 10px;
+}
+
+
+.footer__img--padding {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+
+.footer__texto--color {
+	color: #ffffff;
+	font-size:$fontSize1;
+	font-weight: 500;
+}
+
+.footer__imgs--flex{
+	display: flex;
+	justify-content: center;
+}

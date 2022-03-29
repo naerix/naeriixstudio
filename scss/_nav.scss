@@ -1,0 +1,28 @@
+#bgnav{
+    background:$bgColornav
+}
+
+#navBotonera{
+    li{
+        a{
+            color:$btnNav;
+            font-size: $fontSize1;
+            font-weight: 500;
+            &:hover{
+                color:$btnNavh;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.nav_logo{
+    width: 148px;
+    height: 31px;
+    padding-left: 20px;
+        
+    &:hover{
+        transform:scaleY(0.9);
+        transition: 0.5s;
+    }
+}

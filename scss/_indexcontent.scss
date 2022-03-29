@@ -1,0 +1,87 @@
+//header 
+.header__banner--width {
+	width: 100%;
+	height: auto;
+}
+main {
+	background: #E8E8E8;
+	padding-bottom: 25px;
+}
+//historia 
+
+.section {
+	width: 90%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.section__historia {
+	text-align: center;
+	font-weight:600;
+	font-size: $fontSize3;
+	color:$colorB; 
+}
+
+.section-historia--flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.section__historia--paddingtexto {
+	padding-bottom: $fontSize4;
+}
+
+//discos
+.animacion{
+	animation-name: cambiarColor;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes cambiarColor {
+	0%{
+		color:$colorB; 
+	}
+
+	50%{
+		color: $colorRp;
+	}
+
+	100%{
+		color: $colorR;
+	}
+}
+.discos {
+	text-align: center;
+	font-weight:600;
+	font-size: $fontSize; 
+}
+
+.discos__texto {
+	margin-bottom:$fontSize2;
+	font-weight: bold;
+}
+
+.discos__img--margin {
+	margin-right: auto;
+	margin-left:auto;
+}
+
+.discos__imgs--flex {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.discos__img--size {
+	width: 165px;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 5px 8px 12px $colorB;
+	margin: 4px 4px; 
+}

@@ -1,0 +1,49 @@
+.bannerimg{
+	width:100%;
+	height: auto;
+}
+
+
+.estudios {
+	width:90%;
+	height: auto;
+	margin:auto;
+	font-size: $fontSize2;
+	font-weight: 600;
+}
+
+
+.estudios__txt {
+	background: #ADADAD
+}
+
+.estudios__h1 {
+	text-align: center;
+	font-size: $fontSize5;
+}
+
+.estudios__text {
+	text-align: center;
+}
+
+.estudios__estudio-a--textaling {
+	text-align: center;
+	padding-bottom: $fontSize5;
+}
+
+.estudios__textos {
+	margin-bottom: 25px;
+}
+
+
+.estudiob {
+	text-align: center;
+}
+
+.estudiob__texto {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: left;
+	font-weight: bold;
+	font-size: $fontSize4;
+}
