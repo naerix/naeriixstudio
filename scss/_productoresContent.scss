@@ -1,0 +1,52 @@
+h1 {
+    font-size:$fontSize4 ;
+    text-align: center;
+    padding-top:25px;
+    padding-bottom:30px;
+}
+.productores {
+   font-size: $fontSize2;
+   width: 95%;
+   margin-right: auto;
+   margin-left:auto;
+   height:auto;
+}
+
+//cards
+.productores__card {
+   @include cardFlex (#393939,50px,25px,flex,column,center);
+}
+
+.productores__card-2{
+   @extend .productores__card;
+}
+
+.productores__card-3 {
+   @extend .productores__card;
+}
+
+ //text
+.productores-card--text {
+   text-align: center;
+   align-items: center;
+   color: map-get($map:$paletadeColores, $key:'blanco');
+}
+.productores-card--text2 {
+   @extend .productores-card--text;
+}
+
+.productores-card--text3 {
+   @extend .productores-card--text;
+}
+
+//Imgs
+.productores__card-img {
+   @include cardImg (218px, auto, 50%, 20px 20px);
+}
+.productores__card-2-img {
+   @include cardImg (218px, auto, 50%, 20px 20px);
+}
+.productores__card-3-img {
+   @include cardImg (218px, auto, 50%, 20px 20px);
+}
+

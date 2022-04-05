@@ -1,0 +1,32 @@
+.back_color{
+    background-color: #333;
+    width: 100%;
+    height: 90vh;
+}
+.container_error{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.error_img{
+    height: auto;
+    width: 200px;
+    margin: auto;
+    padding: 0 0;
+}
+
+.problemastecnicos{
+    width: 200px;
+    height: auto;
+}
+.margin_texto{
+    padding-bottom: 5em;
+}

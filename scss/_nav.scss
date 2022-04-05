@@ -1,15 +1,15 @@
 #bgnav{
-    background:$bgColornav
+    background:map-get($map:$paletadeColores, $key:'negro');
 }
 
 #navBotonera{
     li{
         a{
-            color:$btnNav;
+            color: map-get($map:$paletadeColores, $key:'blancopuro');
             font-size: $fontSize1;
             font-weight: 500;
             &:hover{
-                color:$btnNavh;
+                color: map-get($map:$paletadeColores, $key:'Rosado');
                 transition: 0.5s;
             }
         }

@@ -12,6 +12,18 @@
     }
 }
 
+@media (min-width: 387px){
+	//contactanos
+	.form__input{
+		width:250px;
+		height:50px;
+	}
+	.form__input1{
+		width: 250px;
+		height: 50px;
+	}
+}
+
 @media (min-width: 493px){
 	    .discos__img--size {
 	    width: 200px;
@@ -38,4 +50,184 @@
 	    width: 480px;
 	    height: auto;
     }
+}
+
+@media (min-width: 359px){
+
+	.nav_logo {
+    	width: 198px;
+    	height: 48px;
+    	padding-left: 20px;
+	}
+
+	.discos__img--size {
+		width: 149px;
+		height: auto;
+	}
+}
+
+@media (min-width: 493px){
+	.discos__img--size {
+		width: 200px;
+		height: auto;
+	}
+}
+@media (min-width: 663px){
+	.discos__img--size {
+		width: 260px;
+		height: auto;
+	}
+}
+
+@media (min-width: 691px){
+	.discos__img--size {
+		width: 291px;
+		height: auto;
+	}
+}
+
+@media (min-width: 387px){
+	//contactanos
+	.form__input{
+		width:250px;
+		height:50px;
+	}
+	.form__input1{
+		width: 250px;
+		height: 50px;
+	}
+
+	iframe{
+		width:250px ;
+		height:250px ;
+	}
+}
+
+@media (min-width: 443px){
+	//contactanos
+	.form__input{
+		width:350px;
+		height:50px;
+	}
+	.form__input1{
+		width: 350px;
+		height: 50px;
+	}
+	iframe{
+		width:350px ;
+		height:350px ;
+	}
+}
+
+@media (min-width: 555px){
+	//contactanos
+	.form__input{
+		width:400px;
+		height:50px;
+	}
+	.form__input1{
+		width: 400px;
+		height: 50px;
+	}
+
+	iframe{
+		width:400px ;
+		height:400px ;
+	}
+}
+
+@media (min-width: 590px){
+	//contactanos
+	.form__input{
+		width:500px;
+		height:50px;
+	}
+	.form__input1{
+		width: 500px;
+		height: 50px;
+	}
+	iframe{
+		width:500px ;
+		height:500px ;
+	}
+}
+
+@media (min-width: 740px){
+	//contactanos
+   .contact_img{
+	   width: 300;
+	   height: auto;
+   }
+}
+
+@media (min-width: 1200px){
+	.discos__img--size {
+		width: 480px;
+		height: auto;
+	}
+
+
+	//Productores
+
+	.productores__card{
+		flex-direction: row;
+	}
+
+	.productores__card-2{
+		flex-direction: row;
+	}
+	.productores__card-3{
+		flex-direction: row;
+	}
+
+	.productores__card-img{
+		width: 340px;
+		height: auto;
+	}
+	.productores__card-2-img{
+		width: 340px;
+		height: auto;
+	}
+	.productores__card-3-img{
+		width: 340px;
+		height: auto;
+	}
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+		//INDEX
+	.discos__img--size{
+		width: 50rem;
+		height:auto;
+	}
+
+		// estudios
+	.estudioa__img{
+		width: 51rem;
+		height:auto;
+	}
+	.estudiob__img{
+		width: 51rem;
+		height:auto;
+	}
+
+	// equipamento 
+	.equipamento-div{
+		flex-direction: row;
+	}
+
+	// Contactanos
+
+	.contactanos__div{
+		width: 60%;
+		height:auto;
+	}
+
+	.mapa{
+		width: 60%;
+		height:auto;
+	}
 }

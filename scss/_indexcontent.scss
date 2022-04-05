@@ -4,7 +4,7 @@
 	height: auto;
 }
 main {
-	background: #E8E8E8;
+	background: map-get($map:$paletadeColores, $key:'blanco');
 	padding-bottom: 25px;
 }
 //historia 

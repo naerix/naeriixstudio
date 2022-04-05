@@ -551,3 +551,95 @@ iframe{
 	width: 480px;
 	height: auto;
 }
+
+	/* Productores */
+
+	.productores__card{
+		flex-direction: row;
+	}
+
+	.productores__card-2{
+		flex-direction: row;
+	}
+	.productores__card-3{
+		flex-direction: row;
+	}
+
+	.productores__card-img{
+		width: 35rem;
+		height: auto;
+	}
+	.productores__card-2-img{
+		width: 35rem;
+		height: auto;
+	}
+	.productores__card-3-img{
+		width: 35rem;
+		height: auto;
+	}
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.contenedor--displaygrid{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "botonera botonera botonera" "encabezado encabezado encabezado" "main main main" "pie pie pie";
+	}
+
+	.nav{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.nav__ul li {
+		margin-right: 5rem;
+	}
+
+	.nav__logo--size {
+    	margin: 1rem 7.2rem;
+    }
+		/*INDEX  */
+	.discos__img--size{
+		width: 50rem;
+		height:auto;
+	}
+
+		/* estudios */
+	.estudioa__img{
+		width: 51rem;
+		height:auto;
+	}
+	.estudiob__img{
+		width: 51rem;
+		height:auto;
+	}
+
+	/* equipamento */
+	.equipamento-div{
+		flex-direction: row;
+	}
+
+	/* Contactanos */
+
+	.contactanos__div{
+		width: 60%;
+		height:auto;
+	}
+
+	.mapa{
+		width: 60%;
+		height:auto;
+	}
+
+@media only screen and (min-width: 1621px) {
+	.estudioa__img{
+		width: 70rem;
+		height:auto;
+	}
+	.estudiob__img{
+		width: 70rem;
+		height:auto;
+	}

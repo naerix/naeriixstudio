@@ -3,27 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Naeriix Studio - Equipamento </title>
-    <link rel="stylesheet" href="">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css">
+	<title>Naeriix Studio - El mejor equipamento para tu sonido</title>
+	<meta name="description" content="El mejor equipamento lo econtras en Naeriix Studio, ponemos a disposicion todo nuestro hardware para que puedas grabar con la mejor calidad de sonido">
+	<meta name="keywords" content="consola, monitores, compresor, protools">
+   	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<!--Bootsrap-->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<!--Bootsrapend-->
+<link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="contenedor--displaygrid">
-		        <!------- Navbar------->
-		<nav class="nav botonera">
-      <a href="index.html">
-        <img src="../img/naerixlogo.png" alt="naerix logo" class="nav__logo--size">
-      </a>
-      <ul class="nav__ul">
-        <li><a href="../index.html">HOME </a></li>
-        <li><a href="estudios.html">ESTUDIOS</a></li>
-        <li><a href="equipamento.html">EQUIPAMENTO</a></li>
-        <li><a href="productores.html">PRODUCTORES</a></li>
-        <li><a href="contactanos.html">CONTACTANOS</a></li>
-      </ul>
-    </nav>
+<!------- Navbar------->
+<nav class="navbar navbar-expand-lg navbar-dark botonera" id="bgnav">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="../index.html">
+		 <img src="../img/naerixlogo.png" class="nav_logo" alt="naeriix logo">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navBotonera">
+			  <li class="nav-item">
+			   <a class="nav-link" href="../index.html">HOME</a>
+			  </li>
+			  <li class="nav-item">
+			   <a class="nav-link" href="estudios.html">ESTUDIOS</a>
+			  </li>
+			  <li class="nav-item">
+			   <a class="nav-link" href="equipamento.html">EQUIPAMENTO</a>
+			  </li>
+			  <li class="nav-item">
+			   <a class="nav-link" href="productores.html">PRODUCTORES</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+			  </li>                
+			</ul>
+		</div>
+	</div>
+</nav>
+  <!-- terminanavbar -->
 		<!-------------- Contenido ------------->
   <main class="main">
   	<section class="equipamento">
@@ -67,11 +89,28 @@
         </div>
   		</div>
         <p class="equipamento__texto3">consolas y monitor</p>
-      <div class="equipamento-div">
-        <img src="../img/consola1.jpg" alt="imagen de consola" class="equipamento-div__img">
-        <img src="../img/consola2.jpg" alt=" imagen de consola 2 " class="equipamento-div__img">
-        <img src="../img/monitor.jpg" alt=" imagen de monitor" class="equipamento-div__img">
-      </div>
+      	<div class="equipamento-div">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            	<div class="carousel-inner">
+                	<div class="carousel-item active">
+                    	<img src="../img/consola1.jpg" class="d-block w-100 estudioa__img" alt="consola de grabacion">
+                	</div>
+               	 	<div class="carousel-item">
+                    	<img src="../img/consola2.jpg" class="d-block w-100 estudioa__img" alt="consola akai12 de grabacion">
+                	</div>
+					<div class="carousel-item">
+                    	<img src="../img/monitor.jpg" class="d-block w-100 estudioa__img" alt="foto de monitor de sonido imagen">
+                	</div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">siguiente</span>
+            </button>
+      	</div>
   	</section>
   </main>
 	<!-- Pie de pagina -->
@@ -81,5 +120,6 @@
       <a href="https://instagram.com" target=_blank> <img src="../img/ig.png" alt="instagram"> </a>
       <h4 class="footer__texto--color">Naeriix studio es un estudio ficticio creado por el alumno Alex Duarte, ninguno de los artistas ya mencionados han pasado por el.</h4> 
   </footer>
+  	<script src="../js/bootstrap.js"></script>
 </body>
 </html>

@@ -1,0 +1,92 @@
+.contactanos {
+	width: 100%;
+	height: auto;
+	font-size: $fontSize2;
+	text-align: center;
+}
+
+.contactanos__div {
+	width: 90%;
+	height: auto;
+	background: #393939;
+	border-radius:10px;
+	color: #ffffff;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flex__container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact__img {
+	margin:auto;
+	width: 200px;
+	height: auto;
+
+}
+
+.form__input{
+	width: 200px;
+	height: 50px;
+	margin: 10px 0;
+	border:none;
+	border-bottom: 3px solid rgb(240,69,69);
+	background: transparent;
+	color: #fff;
+	font-weight: bold;
+}
+
+.form__input:focus{
+	background: linear-gradient(to bottom, transparent, #222);
+	outline:none;
+	border-bottom: 0.3rem solid rgb(240,135,135);
+}
+.form__input1{
+	width: 200px;
+	height: 50px;
+	margin: 10px 0;
+	border:none;
+	background: rgb(240,69,69);
+	font-weight: bold;
+	color:#fff;
+}
+
+.form__input1:hover{
+	background: rgb(240,55,55);
+	transition: 0.5s;
+}
+
+
+.textarea{
+	min-width: 200px;
+	min-height: 300px;
+	resize: none;
+}
+
+
+
+.mapa {
+	width: 90%;
+	height: auto;
+	background: #393939;
+	border-radius:1rem;
+	margin: 2.5rem 50rem 2.5rem 50rem;
+	color: #ffffff;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe{
+	border-radius: 0.5rem;
+	margin:1rem 1rem;
+	width: 200px;
+	height: 200px;
+
+}

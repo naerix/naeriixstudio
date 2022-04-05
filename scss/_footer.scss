@@ -1,6 +1,6 @@
 //footer
 .footer {
-	background: $bgCfooter;
+	background: map-get($map:$paletadeColores, $key:'grisOscuro');
 	text-align: center;
 	width:100%;
 	padding: 30px;
@@ -20,7 +20,7 @@
 
 
 .footer__texto--color {
-	color: #ffffff;
+	color: map-get($map:$paletadeColores, $key:'blancopuro');
 	font-size:$fontSize1;
 	font-weight: 500;
 }

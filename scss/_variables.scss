@@ -16,6 +16,36 @@ $fontSize:1em;
 $fontSize1:1.1em;
 $fontSize2:1.2em;
 $fontSize3:1.5em;
-$fontSize4:1.8;
+$fontSize4:1.8em;
 $fontSize5:2em;
 $fontSize6:2.5em;
+
+//map 
+$paletadeColores: (
+    'negro':#000,
+    'blanco':#E8E8E8,
+    'gris': #393939,
+    'grisOscuro':#222,
+    'Rosado':rgb(255,69,69),
+    'Rojo':rgb(255,44,44),
+    'blancopuro':#fff,);
+//end map
+
+//mixins 
+        //Cards------------------------------------------>
+    @mixin cardFlex($color, $radius, $margin, $flex, $direction, $center){
+        background: $color;
+        border-radius: $radius;
+        margin-bottom: $margin;
+        display: $flex;
+        flex-direction: $direction;
+        align-items: $center;
+    }
+    //CardsIMG------------------------------------------->
+    @mixin cardImg ($width, $height, $borderR, $marg){
+        width: $width;
+        height: $height;
+        border-radius: $borderR;
+        margin: $marg;
+    }
+//end mixins

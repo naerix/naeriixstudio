@@ -68,7 +68,7 @@ main {
   justify-content: center; }
 
 .section__historia--paddingtexto {
-  padding-bottom: 1.8; }
+  padding-bottom: 1.8em; }
 
 .animacion {
   animation-name: cambiarColor;
@@ -118,7 +118,7 @@ main {
   width: 90%;
   height: auto;
   margin: auto;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 600; }
 
 .estudios__txt {
@@ -146,7 +146,196 @@ main {
   padding-top: 15px;
   text-align: left;
   font-weight: bold;
-  font-size: 1.8; }
+  font-size: 1.5em; }
+
+.equipamento {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  font-size: 1.5em;
+  font-weight: 600; }
+
+.equipamento h1 {
+  padding-top: 25px;
+  text-align: center; }
+
+.equipamento__texto {
+  padding-top: 20px; }
+
+.equipamento__texto2 {
+  margin-bottom: 25px;
+  text-align: center; }
+
+.equipamento__lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.equipamento__texto3 {
+  text-align: center; }
+
+.equipamento-div {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.equipamento-div__img {
+  width: 40rem;
+  height: auto;
+  margin: 1rem 1rem;
+  border-radius: 0.5rem; }
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 30px; }
+
+.productores {
+  font-size: 1.2em;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto; }
+
+.productores__card, .productores__card-2, .productores__card-3 {
+  background: #393939;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.productores-card--text, .productores-card--text2, .productores-card--text3 {
+  text-align: center;
+  align-items: center;
+  color: #E8E8E8; }
+
+.productores__card-img {
+  width: 218px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px 20px; }
+
+.productores__card-2-img {
+  width: 218px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px 20px; }
+
+.productores__card-3-img {
+  width: 218px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px 20px; }
+
+.contactanos {
+  width: 100%;
+  height: auto;
+  font-size: 1.2em;
+  text-align: center; }
+
+.contactanos__div {
+  width: 90%;
+  height: auto;
+  background: #393939;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.flex__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.contact__img {
+  margin: auto;
+  width: 200px;
+  height: auto; }
+
+.form__input {
+  width: 200px;
+  height: 50px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 3px solid #f04545;
+  background: transparent;
+  color: #fff;
+  font-weight: bold; }
+
+.form__input:focus {
+  background: linear-gradient(to bottom, transparent, #222);
+  outline: none;
+  border-bottom: 0.3rem solid #f08787; }
+
+.form__input1 {
+  width: 200px;
+  height: 50px;
+  margin: 10px 0;
+  border: none;
+  background: #f04545;
+  font-weight: bold;
+  color: #fff; }
+
+.form__input1:hover {
+  background: #f03737;
+  transition: 0.5s; }
+
+.textarea {
+  min-width: 200px;
+  min-height: 300px;
+  resize: none; }
+
+.mapa {
+  width: 90%;
+  height: auto;
+  background: #393939;
+  border-radius: 1rem;
+  margin: 2.5rem 50rem 2.5rem 50rem;
+  color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+iframe {
+  border-radius: 0.5rem;
+  margin: 1rem 1rem;
+  width: 200px;
+  height: 200px; }
+
+.back_color {
+  background-color: #333;
+  width: 100%;
+  height: 90vh; }
+
+.container_error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+  text-align: center; }
+
+.error_img {
+  height: auto;
+  width: 200px;
+  margin: auto;
+  padding: 0 0; }
+
+.problemastecnicos {
+  width: 200px;
+  height: auto; }
+
+.margin_texto {
+  padding-bottom: 5em; }
 
 .footer {
   background: #222;
@@ -164,13 +353,50 @@ main {
   margin-right: 25px; }
 
 .footer__texto--color {
-  color: #ffffff;
+  color: #fff;
   font-size: 1.1em;
   font-weight: 500; }
 
 .footer__imgs--flex {
   display: flex;
   justify-content: center; }
+
+@media (min-width: 359px) {
+  .nav_logo {
+    width: 198px;
+    height: 48px;
+    padding-left: 20px; }
+  .discos__img--size {
+    width: 149px;
+    height: auto; } }
+
+@media (min-width: 387px) {
+  .form__input {
+    width: 250px;
+    height: 50px; }
+  .form__input1 {
+    width: 250px;
+    height: 50px; } }
+
+@media (min-width: 493px) {
+  .discos__img--size {
+    width: 200px;
+    height: auto; } }
+
+@media (min-width: 663px) {
+  .discos__img--size {
+    width: 260px;
+    height: auto; } }
+
+@media (min-width: 691px) {
+  .discos__img--size {
+    width: 291px;
+    height: auto; } }
+
+@media (min-width: 1200px) {
+  .discos__img--size {
+    width: 480px;
+    height: auto; } }
 
 @media (min-width: 359px) {
   .nav_logo {
@@ -196,7 +422,90 @@ main {
     width: 291px;
     height: auto; } }
 
+@media (min-width: 387px) {
+  .form__input {
+    width: 250px;
+    height: 50px; }
+  .form__input1 {
+    width: 250px;
+    height: 50px; }
+  iframe {
+    width: 250px;
+    height: 250px; } }
+
+@media (min-width: 443px) {
+  .form__input {
+    width: 350px;
+    height: 50px; }
+  .form__input1 {
+    width: 350px;
+    height: 50px; }
+  iframe {
+    width: 350px;
+    height: 350px; } }
+
+@media (min-width: 555px) {
+  .form__input {
+    width: 400px;
+    height: 50px; }
+  .form__input1 {
+    width: 400px;
+    height: 50px; }
+  iframe {
+    width: 400px;
+    height: 400px; } }
+
+@media (min-width: 590px) {
+  .form__input {
+    width: 500px;
+    height: 50px; }
+  .form__input1 {
+    width: 500px;
+    height: 50px; }
+  iframe {
+    width: 500px;
+    height: 500px; } }
+
+@media (min-width: 740px) {
+  .contact_img {
+    width: 300;
+    height: auto; } }
+
 @media (min-width: 1200px) {
   .discos__img--size {
     width: 480px;
+    height: auto; }
+  .productores__card, .productores__card-2, .productores__card-3 {
+    flex-direction: row; }
+  .productores__card-2 {
+    flex-direction: row; }
+  .productores__card-3 {
+    flex-direction: row; }
+  .productores__card-img {
+    width: 340px;
+    height: auto; }
+  .productores__card-2-img {
+    width: 340px;
+    height: auto; }
+  .productores__card-3-img {
+    width: 340px;
+    height: auto; } }
+
+@media only screen and (min-width: 1200px) {
+  .discos__img--size {
+    width: 50rem;
+    height: auto; }
+  .estudioa__img {
+    width: 51rem;
+    height: auto; }
+  .estudiob__img {
+    width: 51rem;
+    height: auto; }
+  .equipamento-div {
+    flex-direction: row; }
+  .contactanos__div {
+    width: 60%;
+    height: auto; }
+  .mapa {
+    width: 60%;
     height: auto; } }
