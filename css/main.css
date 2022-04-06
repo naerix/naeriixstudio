@@ -208,6 +208,9 @@ h1 {
   flex-direction: column;
   align-items: center; }
 
+.productores__card-2 {
+  background-color: #383838; }
+
 .productores-card--text, .productores-card--text2, .productores-card--text3 {
   text-align: center;
   align-items: center;
