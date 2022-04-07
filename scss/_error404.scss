@@ -30,3 +30,20 @@
 .margin_texto{
     padding-bottom: 5em;
 }
+
+@media (min-width: 740px){
+    .error_img{
+        height: auto;
+        width: 400px;
+        margin: auto;
+        padding: 0 0;
+    }
+    
+    .problemastecnicos{
+        width: 350px;
+        height: auto;
+    }
+    .margin_texto{
+        padding-bottom: 5em;
+    }
+}
