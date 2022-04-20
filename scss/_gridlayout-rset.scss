@@ -1,4 +1,4 @@
-//reset
+//reset----------------------------------
 * {
 	margin: 0;
 	padding: 0;
@@ -7,9 +7,10 @@
 	font-family: oswald, sans-serif;
 }
 
-//Grid-Layout//
+//Grid-Layout//--------------------------
 .contenedor--displaygrid{
 	display:grid;
+	overflow-x: hidden;
 	grid-template-columns: 100vw;
 	grid-template-rows: auto auto auto auto;
 	grid-template-areas: "botonera" "encabezado" "main" "pie";
@@ -21,6 +22,7 @@
 
 .encabezado{
 	grid-area: encabezado;
+	margin: -1px;
 }
 
 .main{
@@ -30,4 +32,4 @@
 .pie{
 	grid-area: pie;
 }
-//////////////
+//////////////////////////////////////////////

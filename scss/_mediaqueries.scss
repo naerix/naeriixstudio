@@ -1,3 +1,4 @@
+/*MEDIA QUERIES*/
 @media (min-width: 359px){
 
 	    .nav_logo {
@@ -160,6 +161,7 @@
    }
 }
 
+
 @media (min-width: 1200px){
 	.discos__img--size {
 		width: 480px;
@@ -168,16 +170,20 @@
 
 
 	//Productores
-
-	.productores__card{
+	.productores{
+		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
+	}
+	.productores__card{
+		flex-direction: column;
 	}
 
 	.productores__card-2{
-		flex-direction: row;
+		flex-direction: column;
 	}
 	.productores__card-3{
-		flex-direction: row;
+		flex-direction: column;
 	}
 
 	.productores__card-img{
@@ -200,7 +206,7 @@
 
 		//INDEX
 	.discos__img--size{
-		width: 50rem;
+		width: 347px;
 		height:auto;
 	}
 
@@ -217,17 +223,53 @@
 	// equipamento 
 	.equipamento-div{
 		flex-direction: row;
+		justify-content: space-between;
+	}
+	.equipamento__lista--flex{
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+	}
+
+	.equipamento-div__img {
+		width: 352px;
+		height: auto;
+		padding: 0;
 	}
 
 	// Contactanos
-
+	.contactanos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 	.contactanos__div{
-		width: 60%;
+		width: 44%;
 		height:auto;
 	}
 
 	.mapa{
-		width: 60%;
+		width: 44%;
 		height:auto;
 	}
+}
+
+@media only screen and (min-width: 1500px){
+
+	//INDEX
+	.discos__img--size{
+		width: 400px;
+		height:auto;
+	}
+
+}
+
+@media only screen and (min-width: 1820px){
+
+	//INDEX
+	.discos__img--size{
+		width: 570px;
+		height:auto;
+	}
+
 }

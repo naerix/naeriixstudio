@@ -1,5 +1,6 @@
 h1 {
     font-size:$fontSize4 ;
+    font-weight: bold;
     text-align: center;
     padding-top:25px;
     padding-bottom:30px;
@@ -11,6 +12,17 @@ h1 {
    margin-left:auto;
    height:auto;
 }
+
+.productores__texto{
+   width: 60%;
+   height: auto;
+   text-align: center;
+   color: #000;
+   font-size: 1.5em;
+   margin: auto;
+   font-weight: bold;
+}
+
 
 //cards
 .productores__card {
@@ -30,7 +42,7 @@ h1 {
 .productores-card--text {
    text-align: center;
    align-items: center;
-   color: map-get($map:$paletadeColores, $key:'blanco');
+   color: map-get($map:$paletadeColores, $key:'Rosado');
 }
 .productores-card--text2 {
    @extend .productores-card--text;

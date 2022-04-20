@@ -7,6 +7,7 @@
 
 .contenedor--displaygrid {
   display: grid;
+  overflow-x: hidden;
   grid-template-columns: 100vw;
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "botonera" "encabezado" "main" "pie"; }
@@ -15,7 +16,8 @@
   grid-area: botonera; }
 
 .encabezado {
-  grid-area: encabezado; }
+  grid-area: encabezado;
+  margin: -1px; }
 
 .main {
   grid-area: main; }
@@ -126,7 +128,8 @@ main {
 
 .estudios__h1 {
   text-align: center;
-  font-size: 2em; }
+  font-size: 1.5em;
+  font-weight: bold; }
 
 .estudios__text {
   text-align: center; }
@@ -157,7 +160,9 @@ main {
 
 .equipamento h1 {
   padding-top: 25px;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em; }
 
 .equipamento__texto {
   padding-top: 20px; }
@@ -166,29 +171,28 @@ main {
   margin-bottom: 25px;
   text-align: center; }
 
-.equipamento__lista {
+.equipamento__lista--flex {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  justify-content: center; }
 
 .equipamento__texto3 {
   text-align: center; }
 
 .equipamento-div {
   display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .equipamento-div__img {
-  width: 40rem;
+  width: 263px;
   height: auto;
-  margin: 1rem 1rem;
-  border-radius: 0.5rem; }
+  padding: 5px;
+  border-radius: 5%; }
 
 h1 {
   font-size: 1.8em;
+  font-weight: bold;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 30px; }
@@ -199,6 +203,15 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   height: auto; }
+
+.productores__texto {
+  width: 60%;
+  height: auto;
+  text-align: center;
+  color: #000;
+  font-size: 1.5em;
+  margin: auto;
+  font-weight: bold; }
 
 .productores__card, .productores__card-2, .productores__card-3 {
   background: #393939;
@@ -214,7 +227,7 @@ h1 {
 .productores-card--text, .productores-card--text2, .productores-card--text3 {
   text-align: center;
   align-items: center;
-  color: #E8E8E8; }
+  color: #ff4545; }
 
 .productores__card-img {
   width: 218px;
@@ -303,7 +316,7 @@ h1 {
   background: #393939;
   border-radius: 1rem;
   margin: 2.5rem 50rem 2.5rem 50rem;
-  color: #ffffff;
+  color: #e24747;
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
@@ -378,6 +391,7 @@ iframe {
   display: flex;
   justify-content: center; }
 
+/*MEDIA QUERIES*/
 @media (min-width: 359px) {
   .nav_logo {
     width: 198px;
@@ -492,12 +506,16 @@ iframe {
   .discos__img--size {
     width: 480px;
     height: auto; }
+  .productores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
   .productores__card, .productores__card-2, .productores__card-3 {
-    flex-direction: row; }
+    flex-direction: column; }
   .productores__card-2 {
-    flex-direction: row; }
+    flex-direction: column; }
   .productores__card-3 {
-    flex-direction: row; }
+    flex-direction: column; }
   .productores__card-img {
     width: 340px;
     height: auto; }
@@ -510,7 +528,7 @@ iframe {
 
 @media only screen and (min-width: 1200px) {
   .discos__img--size {
-    width: 50rem;
+    width: 347px;
     height: auto; }
   .estudioa__img {
     width: 51rem;
@@ -519,10 +537,33 @@ iframe {
     width: 51rem;
     height: auto; }
   .equipamento-div {
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
+  .equipamento__lista--flex {
+    display: flex;
+    flex-direction: row;
+    margin: auto; }
+  .equipamento-div__img {
+    width: 352px;
+    height: auto;
+    padding: 0; }
+  .contactanos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
   .contactanos__div {
-    width: 60%;
+    width: 44%;
     height: auto; }
   .mapa {
-    width: 60%;
+    width: 44%;
+    height: auto; } }
+
+@media only screen and (min-width: 1500px) {
+  .discos__img--size {
+    width: 400px;
+    height: auto; } }
+
+@media only screen and (min-width: 1820px) {
+  .discos__img--size {
+    width: 570px;
     height: auto; } }
