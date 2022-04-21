@@ -1,7 +1,11 @@
+
+
 .back_color{
-    background-color: #333;
+    background-image: url(../img/banner2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 .container_error{
     display:flex;
@@ -14,7 +18,9 @@
     text-align: center;
 }
 
-
+.container_error--div{
+    margin-top: 100px;
+}
 
 .error_img{
     height: auto;
@@ -26,6 +32,7 @@
 .problemastecnicos{
     width: 200px;
     height: auto;
+    border-radius: 5%;
 }
 .margin_texto{
     padding-bottom: 5em;
